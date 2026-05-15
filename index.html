@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "container">
+        <h1>Gastos mensais</h1>
+        <form id="gastos-form">
+            <div class="input-group">
+                <label for="gasto" class="description-type">Gasto</label><br>
+                <input type="text" id="gasto" name="gasto" placeholder="R$ 0,00" inputmode="numeric"><br>
+            </div>
+            
+            <div class="input-group">
+                <label for="tipo_gasto" class="description-type">Tipo de gasto</label><br>
+                    <select name="tipo_gasto" id="tipo_gasto">
+                        <option value="diesel">Diesel</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="equipamento">Equipamento</option>
+                    </select><br>
+                </label>
+            </div>
+            <div class="input-group">
+                <label for="descricao" class="description-type">Descrição (opcional)</label><br>
+                <textarea name="descricao" id="descricao"></textarea>
+            </div>
+            <button type="submit" id="send-button" onclick="sendData()">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
