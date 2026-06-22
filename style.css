@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e9ecef;
     padding: 20px;
 }
 
@@ -15,9 +15,11 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: gray;
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-top: 5px solid #FFC107;
 
 }
 
@@ -32,18 +34,21 @@ body{
 }
 
 .description-type{
-    color: black;
-    font-size: 18px;
+    color: #444;
+    font-size: 16px;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 #send-button{
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
